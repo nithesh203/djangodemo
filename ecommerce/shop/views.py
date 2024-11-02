@@ -69,7 +69,7 @@ def addcategory(request):
 def addproduct(request):
     if(request.method == "POST"):
         n=request.POST['n']
-        i=request.POST['i']
+        i=request.FILES['i']
         d=request.POST['d']
         s=request.POST['s']
         p=request.POST['p']
